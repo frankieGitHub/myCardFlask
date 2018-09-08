@@ -1,0 +1,112 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+05|	session.vim	/^normal! 05|$/;"	m
+APIView	common/views.py	/^class APIView(MethodView):$/;"	c
+ApiBaseTestCase	test/base.py	/^class ApiBaseTestCase(unittest.TestCase):$/;"	c
+AuthenticationError	users/models.py	/^class AuthenticationError(Exception):$/;"	c
+Base	common/models.py	/^Base = declarative_base()$/;"	v
+BaseManager	common/models.py	/^class BaseManager(object):$/;"	c
+BaseModel	common/models.py	/^class BaseModel(Base, JsonSerializer):$/;"	c
+BaseResource	common/resources.py	/^class BaseResource(object):$/;"	c
+ENDPOINT	common/views.py	/^    ENDPOINT = '\/mymusic\/api\/v1.0'$/;"	v	class:APIView
+JsonSerializer	common/serializer.py	/^class JsonSerializer(object):$/;"	c
+ModelTestFactory	test/base.py	/^class ModelTestFactory(object):$/;"	c
+SessionFactory	common/models.py	/^class SessionFactory(object):$/;"	c
+SessionLoad	session.vim	/^let SessionLoad = 1$/;"	v
+User	users/models.py	/^class User(BaseModel):$/;"	c
+UserAPIView	users/views.py	/^class UserAPIView(APIView):$/;"	c
+UserModelTestCase	test/models.py	/^class UserModelTestCase(ApiBaseTestCase):$/;"	c
+UserResource	users/resources.py	/^class UserResource(BaseResource):$/;"	c
+UserViewsTestCase	test/views.py	/^class UserViewsTestCase(ApiBaseTestCase):$/;"	c
+__abstract__	common/models.py	/^    __abstract__ = True$/;"	v	class:BaseModel
+__call__	test/base.py	/^    def __call__(self, f):$/;"	m	class:raises	file:
+__init__	common/models.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:BaseModel
+__init__	common/models.py	/^    def __init__(self, model, *args, **kwargs):$/;"	m	class:BaseManager
+__init__	common/resources.py	/^    def __init__(self, dict_data, model=None, **kwargs):$/;"	m	class:BaseResource
+__init__	test/base.py	/^    def __init__(self, exception):$/;"	m	class:raises
+__init__	users/resources.py	/^    def __init__(self, data, **kwargs):$/;"	m	class:UserResource
+__model__	common/resources.py	/^    __model__ = None$/;"	v	class:BaseResource
+__model__	users/resources.py	/^    __model__ = User$/;"	v	class:UserResource
+__new__	common/models.py	/^    def __new__(cls, *args, **kwargs):$/;"	m	class:SessionFactory	file:
+__repr__	users/models.py	/^    def __repr__(self):$/;"	m	class:User	file:
+__tablename__	common/models.py	/^    def __tablename__(cls):$/;"	m	class:BaseModel	file:
+_init_db	test/base.py	/^    def _init_db(self):$/;"	m	class:ApiBaseTestCase
+_instance	common/models.py	/^    _instance = None$/;"	v	class:SessionFactory
+access_token	users/models.py	/^    access_token = Column(String(256), nullable=False)$/;"	v	class:User
+add	common/models.py	/^    def add(self):$/;"	m	class:BaseModel
+add	common/resources.py	/^    def add(self):$/;"	m	class:BaseResource
+add	users/models.py	/^    def add(self):$/;"	m	class:User
+app	users/views.py	/^app = Flask(__name__)$/;"	v
+auth_required	users/auth.py	/^def auth_required(f):$/;"	f
+authenticate	users/models.py	/^    def authenticate(cls, username, access_token):$/;"	m	class:User
+close_session	common/models.py	/^    def close_session(self):$/;"	m	class:BaseModel
+close_session	common/models.py	/^def close_session():$/;"	f
+conection_string	common/models.py	/^    conection_string = 'sqlite:\/\/\/music.db'$/;"	v
+conection_string	common/models.py	/^    conection_string = 'sqlite:\/\/\/test.db'$/;"	v
+create_unique_email	test/base.py	/^    def create_unique_email(cls):$/;"	m	class:ModelTestFactory
+create_unique_string	test/base.py	/^    def create_unique_string(cls, prefix='', n_range=6):$/;"	m	class:ModelTestFactory
+decorated_function	users/auth.py	/^    def decorated_function(*args, **kwargs):$/;"	f	function:auth_required
+delete	common/models.py	/^    def delete(self):$/;"	m	class:BaseModel
+delete	common/resources.py	/^    def delete(self):$/;"	m	class:BaseResource
+delete	common/views.py	/^    def delete(self):$/;"	m	class:APIView
+delete	users/views.py	/^    def delete(self, user=None, **kwargs):$/;"	m	class:UserAPIView
+email	users/models.py	/^    email = Column(String(256), index=True, unique=True, nullable=False)$/;"	v	class:User
+filter_by	common/models.py	/^    def filter_by(self, order_by='id', limit=500, offset=0, **kwargs):$/;"	m	class:BaseManager
+first_name	users/models.py	/^    first_name = Column(String(256), nullable=False)$/;"	v	class:User
+generate_access_token	users/models.py	/^    def generate_access_token(self):$/;"	m	class:User
+get	common/models.py	/^    def get(self, id):$/;"	m	class:BaseManager
+get	common/views.py	/^    def get(self):$/;"	m	class:APIView
+get	users/views.py	/^    def get(self, user=None, **kwargs):$/;"	m	class:UserAPIView
+get_engine	common/models.py	/^def get_engine(*args, **kwargs):$/;"	f
+get_session	common/models.py	/^    def get_session(self):$/;"	m	class:SessionFactory
+get_session	common/models.py	/^def get_session(*args, **kwargs):$/;"	f
+get_user	test/base.py	/^    def get_user(cls, **kwargs):$/;"	m	class:ModelTestFactory
+id	common/models.py	/^    id = Column(Integer, primary_key=True)$/;"	v	class:BaseModel
+init_test	test/__init__.py	/^def init_test():$/;"	f
+is_valid	common/resources.py	/^    def is_valid(self):$/;"	m	class:BaseResource
+json_request	test/base.py	/^    def json_request(self, url, data={}, method='post', headers=[]):$/;"	m	class:ApiBaseTestCase
+json_request_with_credentials	test/base.py	/^    def json_request_with_credentials(self, url, data={}, method='post',$/;"	m	class:ApiBaseTestCase
+json_response	common/views.py	/^    def json_response(self, data={}):$/;"	m	class:APIView
+last_name	users/models.py	/^    last_name = Column(String(256), nullable=False)$/;"	v	class:User
+main	manage.py	/^def main():$/;"	f
+objects	common/models.py	/^    def objects(cls):$/;"	m	class:BaseModel
+pass_word	users/models.py	/^    pass_word = Column(String(256), nullable=False)$/;"	v	class:User
+post	common/views.py	/^    def post(self):$/;"	m	class:APIView
+post	users/views.py	/^    def post(self):$/;"	m	class:UserAPIView
+put	common/views.py	/^    def put(self):$/;"	m	class:APIView
+put	users/views.py	/^    def put(self, user=None, **kwargs):$/;"	m	class:UserAPIView
+raises	test/base.py	/^class raises(object):$/;"	c
+raw_sql	common/models.py	/^    def raw_sql(cls, sql, **kwargs):$/;"	m	class:BaseModel
+return_error	users/auth.py	/^def return_error():$/;"	f
+run_app	users/views.py	/^def run_app():$/;"	f
+runserver	manage.py	/^def runserver():$/;"	f
+s:l	session.vim	/^let s:l = 14 - ((11 * winheight(0) + 12) \/ 24)$/;"	v
+s:so_save	session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+setUp	test/base.py	/^    def setUp(self):$/;"	m	class:ApiBaseTestCase
+setUp	test/views.py	/^    def setUp(self):$/;"	m	class:UserViewsTestCase
+syncdb	manage.py	/^def syncdb(**kwargs):$/;"	f
+tearDown	test/base.py	/^    def tearDown(self):$/;"	m	class:ApiBaseTestCase
+test	manage.py	/^def test(**kwargs):$/;"	f
+test_authentication_ok	test/models.py	/^    def test_authentication_ok(self):$/;"	m	class:UserModelTestCase
+test_create_user	test/views.py	/^    def test_create_user(self):$/;"	m	class:UserViewsTestCase
+test_delete_user	test/views.py	/^    def test_delete_user(self):$/;"	m	class:UserViewsTestCase
+test_fail_create_required_fields	test/models.py	/^    def test_fail_create_required_fields(self):$/;"	m	class:UserModelTestCase
+test_fail_create_required_fields	test/views.py	/^    def test_fail_create_required_fields(self):$/;"	m	class:UserViewsTestCase
+test_fail_invalid_access_token	test/models.py	/^    def test_fail_invalid_access_token(self):$/;"	m	class:UserModelTestCase
+test_fail_username_unique	test/views.py	/^    def test_fail_username_unique(self):$/;"	m	class:UserViewsTestCase
+test_get_user_request_info	test/views.py	/^    def test_get_user_request_info(self):$/;"	m	class:UserViewsTestCase
+test_invalid_access_token	test/views.py	/^    def test_invalid_access_token(self):$/;"	m	class:UserViewsTestCase
+test_update_user_info	test/views.py	/^    def test_update_user_info(self):$/;"	m	class:UserViewsTestCase
+to_serializable_dict	common/resources.py	/^    def to_serializable_dict(self):$/;"	m	class:BaseResource
+to_serializable_dict	common/serializer.py	/^    def to_serializable_dict(self):$/;"	m	class:JsonSerializer
+update	common/models.py	/^    def update(self):$/;"	m	class:BaseModel
+update	common/resources.py	/^    def update(self):$/;"	m	class:BaseResource
+username	users/models.py	/^    username = Column(String(256), index=True, unique=True, nullable=False)$/;"	v	class:User
+wrapped_f	test/base.py	/^        def wrapped_f(*args):$/;"	f	function:raises.__call__
+zt	session.vim	/^normal! zt$/;"	m
